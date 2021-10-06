@@ -2,13 +2,18 @@
 
 // Nos permite asignar múltiples variables simultáneamente:
 
-// Sin destructuring:
-// let vegetables = ['🍅', '🍄', '🥕'];
-// let tomato = vegetables[0];
-// let mushroom = vegetables[1];
-// let carrot = vegetables[2];
-
-// Con destructuring:
-let [tomato, mushroom, carrot] = ['🍅', '🍄', '🥕'];
+// Con arrays:
+const [tomato, mushroom, carrot] = ['🍅', '🍄', '🥕'];
 console.log(tomato, mushroom, carrot);
 // output/> 🍅 🍄 🥕
+
+// Con objetos:
+const vegetales = {
+	tomate: '🍅',
+	champi: '🍄',
+	zanahoria: '🥕'
+};
+const { tomate, champi, zanahoria } = vegetales;
+console.log(tomate); // output/> 🍅
+console.log(champi); // output/> 🍄
+console.log(zanahoria); // output/> 🥕
