@@ -13,6 +13,6 @@ const todosChampis = ensalada.every((e) => e === '🍄');
 console.log(todosChampis);
 //> false
 
-// "indexOf" -> NO modifica el array original
+// "every" -> NO modifica el array original
 console.log(ensalada);
 //> [ '🍅', '🍄', '🥕' ]
